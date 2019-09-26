@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ejercicio5</title>
+    <script>
+        function MostrarValorRango(valor){
+            document.getElementById("campomostrarid").value=valor;
+        }    
+    </script>
 </head>
 <body>
     <h1>Sesion 5</h1>
@@ -46,17 +51,14 @@
         <label for="color1id">Campo de tipo color: </label>
         <input type="color" id="color1id" name="color1" required>
         <br>
-        <label for="rango1id">Campo de tipo color: </label>
-        <input type="range" id="rango1id" name="rango1" min="0" max="10" value="5" step="1" required>
-        <datalist id="valores">
-            <option value="0" label=""></option>
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
-            <option value="4"></option>
-            <option value="5"></option>
-        </datalist>
+        <label for="rango1id">Campo de tipo rango: </label>
+        <input type="range" id="rango1id" name="rango1" min="0" max="10" value="5" step="1" onchange="MostrarValorRango(this.value)" required>
+        <input type="text" id="campomostrarid">
         <br>
+        <label for="campodni1id">Campo de tipo DNI: </label>
+        <input type="text" id="campodni1id" name="campodni1" placeholder="Introduce DNI" title="Introduce DNI 8 numeros y una letra de la A-Z" pattern="[0-9]{8}[A-Z]{1}" autofocus required>
+        <br>
+        
         <input type="submit" id="boton1id" name="boton1">
         
     </fieldset>
