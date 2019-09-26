@@ -13,14 +13,52 @@
     <fieldset>
         <legend>Formulario Completo</legend>
         <label for="campotexto1id">Nombre: </label>
-        <input type="text" id="campotexto1" placeholder="Introduzca nombre">
+        <input type="text" id="campotexto1" placeholder="Introduzca nombre" required>
         <br>
         <label for="areatexto1id">Comentarios: </label>
         <br>
-        <textarea name="areatexto1" id="areatexto1id" cols="37" rows="5" placeholder="Comentar aquí"></textarea>
+        <textarea name="areatexto1" id="areatexto1id" cols="67" rows="5" placeholder="Comentar aquí"></textarea>
         <br>
         <label for="campobusqueda1">Buscar término: </label>
-        <input type="search" name="campobusqueda1" id="campobusqueda1id" placeholder="Introduzca termino de busqueda">
+        <input type="search" name="campobusqueda1" id="campobusqueda1id" placeholder="Introduzca termino de busqueda" size="50" maxlength="40" required>
+        <br>
+        <label for="campocontrasena1id">Contraseña:</label>
+        <input type="password" id="campocontrasena1" name="campocontrasena1" placeholder="Coloque contraseña" required>
+        <br>
+        <label for="fichero1id">Fichero: </label>
+        <input type="file" id="fichero1id" name="fichero1">
+        <br>
+        <label for="numero1id">Campo de tipo numero: </label>
+        <input type="number" name="numero1" id="numero1id" step="4">
+        <br>
+        <label for="url1id">Campo de tipo url: </label>
+        <input type="url" id="url1id" name="url1"> required
+        <br>
+        <label for="email1id">Campo de tipo email: </label>
+        <input type="email" id="email1id" name="email1" required>
+        <br>
+        <label for="campodate1id">Campo de tipo fecha: </label>
+        <input type="date" id="campodate1id" name="campodate1" required>
+        <br>
+        <label for="tiempo1id">Campo de tipo hora: </label>
+        <input type="time" id="tiempo1id" name="tiempo1" required>
+        <br>
+        <label for="color1id">Campo de tipo color: </label>
+        <input type="color" id="color1id" name="color1" required>
+        <br>
+        <label for="rango1id">Campo de tipo color: </label>
+        <input type="range" id="rango1id" name="rango1" min="0" max="10" value="5" step="1" required>
+        <datalist id="valores">
+            <option value="0" label=""></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+        </datalist>
+        <br>
+        <input type="submit" id="boton1id" name="boton1">
+        
     </fieldset>
 </body>
 </html>
