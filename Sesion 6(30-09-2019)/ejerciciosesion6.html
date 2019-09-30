@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SESION 6</title>
+</head>
+<body>
+    <form id="formulario1" action="">
+        <fieldset>
+            <legend>Formulario  utilizando pattern</legend>
+            <label for="campo1id">DNI: </label>
+            <input type="text" required maxlength="9" size="19" id="campo1id" pattern="[a-zA-Z]?[0-9]{7}[0-9]?[a-zA-Z]{1}" placeholder="DNI: 8 numeros y una letras" title="Debe contener 8 digitos numericos y uno alfanumericos">
+            <input type="submit">
+    </form>
+</body>
+</html>
