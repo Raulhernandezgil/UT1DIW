@@ -10,6 +10,25 @@
     <h1>Resto de elementos html5</h1>
     <h2>Elementos div: es un elemento de bloque</h2>
     <div>Esto es una capa. Se utiliza para estructurar el contenido de una pagina web</div>
-    
+
+    <h2>Elemento audio</h2>
+    <audio id="audio" controls>
+        <source src="Cucumba.mp3">
+    </audio>
+
+    <h2>Elemento de progreso</h2>
+    <progress max="100" value="80"></progress>
+
+    <h2>Canvas</h2>
+    <canvas id="canvas1" width="300px" height="150px" style="border: 1px solid black;">
+        Tu navegador no soporta canvas
+    </canvas>
+    <script>
+        var canvas=document.getElementById("canvas1");
+        let contexto=canvas.getContext("2d");
+        contexto.fillStyle="#FF0000";
+        contexto.fillRect(0,0,150,75);
+
+    </script>
 </body>
 </html>
